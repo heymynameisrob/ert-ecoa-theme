@@ -1,0 +1,28 @@
+<a href="#" class="dialog-toggle">Open Modal</a>
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        <h3 class="mdc-typography--headline3">Accept audio and video permissions</h3>
+        <p class="mdc-typography--body1">Enable your camera and microphone to participate in the virtual visit session</p>
+        <img src="/static/Graphic.png" alt="" />
+        <p class="mdc-typography--caption">If you deny access, you can only access the eCOA Live assessment form</caption>
+      </div>
+      <div class="mdc-dialog__actions mdc-dialog--stacked" style="flex-order:reverse;">
+        <button type="button" class="mdc-button mdc-button--raised mdc-dialog__button" data-mdc-dialog-action="accept" data-mdc-dialog-button-default>
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Enable Permissions</span>
+        </button>
+        <button type="button" class="mdc-button mdc-button--outlined mdc-dialog__button" data-mdc-dialog-action="discard">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Deny Permissions</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>

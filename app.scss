@@ -1,0 +1,19 @@
+// Import your theme variables
+@import "theme";
+
+// Import MDC Web components
+@import "@material/typography/mdc-typography";
+@import "@material/button/mdc-button";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+@import "@material/select/mdc-select";
+@import "@material/fab/mdc-fab";
+@import "@material/tab/mdc-tab";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/dialog/mdc-dialog";
+
+// Import your components for your application
+@import "components";

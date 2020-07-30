@@ -1,0 +1,128 @@
+// Customer Components and Overrides
+.mdc-button--raised {
+  box-shadow:0 1px 4px rgba(0,0,0,0.1);
+}
+.mdc-button--outlined {
+	border-width:1px;
+}
+.mdc-button--destruct:not(:disabled) {
+  background-color:#B92D15;
+}
+.mdc-button--block{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+.mdc-fab {
+  background-color:#fff;
+  color:$mdc-theme-primary;
+}
+.mdc-fab__icon {
+  fill:#888;
+}
+
+// Surfaces
+.mdc-card {
+  display:block;
+  border-radius:$medium-component-radius;
+  background-color:#fff;
+  box-shadow:0 -1px 10px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);  
+}
+.mdc-card > * {
+  padding:1.5rem;
+}
+
+// Media
+.cc-video {
+  @extend .mdc-card;
+  background-color:#d8d8d8;
+}
+.cc-video > video {
+  position: absolute;
+  display:block;  
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  object-fit: cover;
+}
+
+.cc-video--full {
+  position: relative;
+  padding-top: 100%;
+  overflow:hidden;
+  @extend .mdc-card;
+
+  @media(min-width:48rem) {
+    padding-top: 56.25%;
+  }
+}
+
+.cc-video--full video {
+  border-radius:$medium-component-radius;
+}
+
+.cc-video--avatar {
+  display:inline-block;
+  border-radius:50%;
+}
+.cc-video--avatar video {
+  position: relative; 
+  border-radius:50%;
+  width:2.5rem;
+  height:2.5rem;
+}
+
+// Dropdown
+.mdc-select {
+  width:360px;
+}
+.mdc-select .mdc-floating-label {
+  font-weight:400;
+}
+
+// Modal
+.mdc-dialog__surface {
+  padding:2rem 5rem 2rem 5rem;
+}
+.mdc-dialog--stacked {
+  align-items: center;
+
+  button {
+    width:100%;
+    text-align:center;
+    margin:0;
+  }
+}
+
+.mdc-dialog__content {  
+  text-align:center;
+  max-width:48ch;
+  margin:0 auto;
+}
+
+// Components
+.cc-actions {
+  max-width:360px;  
+  display:grid;
+  place-items: center;
+}
+.cc-actions .mdc-button {
+  display:block;
+  width:100%;
+}
+.cc-actions--av-controls {
+  display:flex;
+  justify-content: flex-start;
+  margin-bottom:1.5rem;
+  margin:0 auto;
+  margin-bottom:1.5rem;
+
+  button {
+    margin-right:1.5rem;
+  }
+  button:last-of-type {
+    margin-right:0;
+  }
+}

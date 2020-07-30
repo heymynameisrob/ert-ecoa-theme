@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eCOA Live Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="/dist/bundle.css">
+    <style>
+      body {
+        max-width:1024px;
+        margin:0 auto;        
+      }
+      .sg-section {
+        padding-top:7rem;
+      }
+      .sg-section > p:first-of-type {
+        font-family:monospace;
+        text-transform:uppercase;
+        margin:0 0 1rem 0;
+        color:#888;
+      }
+    </style>
+  </head>
+  <body class="mdc-typography">
+    {{ content | safe }}
+    <!-- import the Material javascript file -->
+    <script src="/dist/bundle.js" async></script>
+  </body>
+</html>

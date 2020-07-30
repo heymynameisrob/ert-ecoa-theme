@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eCOA Live Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import Material Icons from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="/dist/bundle.css">
+    <style>
+      body {
+        max-width:1024px;
+        margin:0 auto;        
+      }
+      .sg-section {
+        padding-top:7rem;
+      }
+      .sg-section > p:first-of-type {
+        font-family:monospace;
+        text-transform:uppercase;
+        margin:0 0 1rem 0;
+        color:#888;
+      }
+    </style>
+  </head>
+  <body class="mdc-typography">
+    <section class="sg-section">
+  <p>Typography</p>
+  <div class="sg-components">
+    <h1 class="mdc-typography--headline1">Headline 1</h1>
+<h2 class="mdc-typography--headline2">Headline 2</h2>
+<h3 class="mdc-typography--headline3">Headline 3</h3>
+<h4 class="mdc-typography--subtitle1">Subtitle 1</h4>
+<p class="mdc-typography--body1">Body 1</p>
+<p class="mdc-typography--body2">Body 2</p>
+<p class="mdc-typography--caption">Caption</p>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Buttons</p>
+  <div class="sg-components">
+    <div>  
+  <button class="mdc-button mdc-button--raised">
+    Primary Button
+  </button>
+  <button class="mdc-button mdc-button--outlined">
+    Secondary Button
+  </button>
+  <button class="mdc-button">
+    Text Button
+  </button>
+  <button class="mdc-button mdc-button--raised mdc-button--destruct">
+    Destructive Button
+  </button>
+  <button class="mdc-fab" aria-label="Favorite">
+    <div class="mdc-fab__ripple"></div>
+    <span class="mdc-fab__icon material-icons">mic</span>
+  </button>
+</div>
+
+  </div>
+</section>
+<section class="sg-section">
+  <p>Surfaces</p>
+  <div class="sg-components">
+    <div class="mdc-card">
+  <h3 class="mdc-typography--headline3">Basic Card Surface</h3>
+</div>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Dropdown</p>
+  <div class="sg-components">
+    <div class="mdc-select mdc-select--filled">
+  <div class="mdc-select__anchor">
+    <span class="mdc-select__ripple"></span>
+    <span class="mdc-floating-label">Microphone</span>
+    <span class="mdc-select__selected-text" style="position:absolute; line-height:1.8"></span>
+    <span class="mdc-select__dropdown-icon"></span>
+    <span class="mdc-line-ripple"></span>
+  </div>
+
+  <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+    <ul class="mdc-list">
+      <li class="mdc-list-item" data-value="grains">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">Built-in Microphone</span>
+      </li>
+      <li class="mdc-list-item" data-value="vegetables">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">Jabra 123</span>
+      </li>     
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Media</p>
+  <div class="sg-components">
+    <div class="cc-video cc-video--full">
+  <video>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div>
+<div class="cc-video cc-video--avatar">
+  <video autoplay="true" id="userVideo" />
+</div>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Tabs</p>
+  <div class="sg-components">
+    <div class="mdc-tab-bar" role="tablist">
+  <div class="mdc-tab-scroller">
+    <div class="mdc-tab-scroller__scroll-area">
+      <div class="mdc-tab-scroller__scroll-content">
+        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">            
+            <span class="mdc-tab__text-label">Sound</span>
+          </span>
+          <span class="mdc-tab-indicator mdc-tab-indicator--active">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">            
+            <span class="mdc-tab__text-label">Video</span>
+          </span>
+          <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+        <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">            
+            <span class="mdc-tab__text-label">About</span>
+          </span>
+          <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Modal</p>
+  <div class="sg-components">
+    <a href="#" class="dialog-toggle">Open Modal</a>
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        <h3 class="mdc-typography--headline3">Accept audio and video permissions</h3>
+        <p class="mdc-typography--body1">Enable your camera and microphone to participate in the virtual visit session</p>
+        <img src="/static/Graphic.png" alt="" />
+        <p class="mdc-typography--caption">If you deny access, you can only access the eCOA Live assessment form</caption>
+      </div>
+      <div class="mdc-dialog__actions mdc-dialog--stacked" style="flex-order:reverse;">
+        <button type="button" class="mdc-button mdc-button--raised mdc-dialog__button" data-mdc-dialog-action="accept" data-mdc-dialog-button-default>
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Enable Permissions</span>
+        </button>
+        <button type="button" class="mdc-button mdc-button--outlined mdc-dialog__button" data-mdc-dialog-action="discard">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Deny Permissions</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Components</p>
+  <div class="sg-components">
+    <div>
+  <div class="cc-actions">
+    <div class="cc-actions--av-controls">
+      <button class="mdc-fab" aria-label="Microphone">
+        <div class="mdc-fab__ripple"></div>
+        <span class="mdc-fab__icon material-icons">mic</span>
+      </button>
+      <button class="mdc-fab" aria-label="Video">
+        <div class="mdc-fab__ripple"></div>
+        <span class="mdc-fab__icon material-icons">videocam</span>
+      </button>
+      <button class="mdc-fab" aria-label="More">
+        <div class="mdc-fab__ripple"></div>
+        <span class="mdc-fab__icon material-icons">more_horiz</span>
+      </button>
+    </div>
+    <button class="mdc-button mdc-button--raised mdc-button--destruct">Leave call</button>
+  </div>
+</div>
+  </div>
+</section>
+    <!-- import the Material javascript file -->
+    <script src="/dist/bundle.js" async></script>
+  </body>
+</html>
