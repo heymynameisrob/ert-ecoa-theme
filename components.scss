@@ -24,7 +24,7 @@
 // Surfaces
 .mdc-card {
   display:block;
-  border-radius:$medium-component-radius;
+  border-radius:8px;
   background-color:#fff;
   box-shadow:0 -1px 10px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);  
 }
@@ -47,7 +47,6 @@
   padding:0;
   object-fit: cover;
 }
-
 .cc-video--full {
   position: relative;
   padding-top: 100%;
@@ -60,7 +59,7 @@
 }
 
 .cc-video--full video {
-  border-radius:$medium-component-radius;
+  border-radius:8px;
 }
 
 .cc-video--avatar {
@@ -72,6 +71,34 @@
   border-radius:50%;
   width:2.5rem;
   height:2.5rem;
+}
+
+.cc-mic-setting {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow:row nowrap;
+}
+.cc-mic-setting a {  
+  display:block;
+  color:#222;
+  padding:1rem;
+}
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  height:8px;
+  width:100%;
+  max-width:360px;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  border:0;
+}
+progress::-webkit-progress-value {
+  background:$mdc-theme-secondary !important;
+  border-radius: 2px;
 }
 
 // Dropdown
