@@ -22,10 +22,83 @@
         margin:0 0 1rem 0;
         color:#888;
       }
+      .swatch {
+        padding:1.5rem 1rem;
+        border-radius:4px;
+        margin-bottom:1.5rem;
+      }
+      .swatch p + p {
+        margin-top:.5rem;
+        font-weight:normal;
+      }
+      .swatch p {
+        font-weight:500;
+      }
+      .swatch p:last-of-type {
+        opacity:0.7;
+      }
+
+      .swatch[data-colour="primary"] {
+        background-color:#1BAAD7;
+        color:white;
+      }
+      .swatch[data-colour="secondary"] {
+        background-color:#C4D02B;
+        color:black;
+      }
+      .swatch[data-colour="text-primary"] {
+        background-color:#222;
+        color:#fff;
+      }
+      .swatch[data-colour="text-secondary"] {
+        background-color:#444;
+        color:#fff;
+      }
+      .swatch[data-colour="text-low"] {
+        background-color:#888;
+        color:#fff;
+      }
+      .swatch[data-colour="muted"] {
+        background-color:#f5f5f5;
+        color:#222;
+      }
     </style>
   </head>
   <body class="mdc-typography">
     <section class="sg-section">
+  <p>Colours</p>
+  <div class="sg-components">
+    <figure class="swatch" data-colour="primary">
+  <p>Primary</p>
+  <p>#1BAAD7</p>
+</figure>
+<figure class="swatch" data-colour="secondary">
+  <p>Secondary</p>
+  <p>#C4D02B</p>
+</figure>
+<figure class="swatch" data-colour="text-primary">
+  <p>Text High Priority</p>
+  <p>#222</p>
+</figure>
+<figure class="swatch" data-colour="text-secondary">
+  <p>Text Medium Priority</p>
+  <p>#444</p>
+</figure>
+<figure class="swatch" data-colour="text-low">
+  <p>Text Low Priority</p>
+  <p>#888</p>
+</figure>
+<figure class="swatch" data-colour="muted">
+  <p>Muted</p>
+  <p>#F5F5F5</p>
+</figure>
+<figure class="swatch" data-colour="base">
+  <p>Base</p>
+  <p>#FFF</p>
+</figure>
+  </div>
+</section>
+<section class="sg-section">
   <p>Typography</p>
   <div class="sg-components">
     <h1 class="mdc-typography--headline1">Headline 1</h1>
@@ -35,6 +108,50 @@
 <p class="mdc-typography--body1">Body 1</p>
 <p class="mdc-typography--body2">Body 2</p>
 <p class="mdc-typography--caption">Caption</p>
+  </div>
+</section>
+<section class="sg-section">
+  <p>Layout</p>
+  <div class="sg-components">
+    <style>
+  .grid {
+    display:block;
+    grid-template-columns:repeat(12,1fr);
+    grid-gap:1.5rem;    
+  }
+  @media(min-width:48rem) {
+    .grid {
+      display:grid;
+    }
+  }
+  .grid .emulator {
+    grid-column:span 9;
+  }
+  .grid .side-video {
+    grid-column:span 3;
+  }
+  .grid .main-video {
+    grid-column: 3 / 11;
+  }
+
+  /* ignore just for display */
+  .grid article {
+    height:200px;
+    background-color:#f5f5f5;
+    border:1px dashed #d8d8d8;
+    display:grid;
+    place-items:center;
+    margin-bottom:1.5rem; 
+  }
+</style>
+
+<div class="grid">
+  <article class="emulator">Emulator</article>
+  <article class="side-video">Side Video</article>
+</div>
+<div class="grid">
+  <article class="main-video">Main Video</article>   
+</div>
   </div>
 </section>
 <section class="sg-section">
